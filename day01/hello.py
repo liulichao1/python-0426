@@ -40,3 +40,5 @@ True: Unicode数字，全角数字（双字节），罗马数字，汉字数字
 False: 无
 Error: byte数字（单字节）
 '''
+print(r'Tom\'s name')
+
