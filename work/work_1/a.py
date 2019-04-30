@@ -1,16 +1,4 @@
-"""
-1. 求一个数值 list 的所有元素和
-2. 求一个数值 list 的最大/最小元素值
-3. 求一个字符串 list 中，字符串长度大于2，且首尾字符相同的元素个数[‘a’, ‘xy’, ‘alabama’, ‘101’]2
-4. 把一个 tuple 转为字符
-5. 对一个 tuple 进行各种切片操作
-6. 把 3 个 dict 合并为 1 个 dict
-7. 把一个 dict 按 key 排序输出
-8. 找出两个 dict 中的 key-value 相同项{‘key1’: 1, ‘key2’: 3, ‘key3’: 2}, {‘key1’: 1, ‘key2’: 2}key1: 1
-9. 求一个 set 的最大/最小元素值
-10. 把两个 set 中的不同元素构造为一个新的 set 并输出
 
-"""
 #1. 求一个数值 list 的所有元素和
 nums = [12,23,34,45]
 print(sum(nums))
@@ -63,12 +51,8 @@ print(max(keys))
 print(min(keys))
 
 # 10. 把两个 set 中的不同元素构造为一个新的 set 并输出
-names1 = {'Tom', 'Jerry'}
-names2 = {'Jerry', 'Spike'}
-names3 = names1.intersection(names2)
-print(names3)
-
-names1 = {'Tom', 'Jerry'}
-names2 = {'Jerry', 'Spike'}
-names3 = names1.symmectric_difference(names2)
-print(names3)
+a = {11, 22, 33, 44}
+b = {44, 22, 33, 55}
+c = a ^ b
+print(c)
+print(a.symmetric_difference(b))
