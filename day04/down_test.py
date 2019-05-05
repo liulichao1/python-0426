@@ -1,4 +1,5 @@
 from urllib.request import urlopen
+
 with urlopen('https://book.douban.com/tag/%E5%B0%8F%E8%AF%B4')as f:
     counter = 1
     for line in f.readlines():
