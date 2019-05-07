@@ -3,7 +3,7 @@
 
 """This is a demo module..."""
 
-__author__='Tom'
+__author__ = 'Tom'
 
 import sys
 
@@ -15,6 +15,7 @@ def _fn_private():
 def fn_test():
     print(sys.argv)
     _fn_private()
+
 
 if __name__ == '__main__':
     fn_test()
