@@ -1,6 +1,6 @@
 # @Time : 2019/5/7 15:09
 # @Author : 2273360936@qq.com
-# @FileName : e.py
+# @FileName : captcha_test.py
 # @GitHub : https://github.com/liulichao1/python-0426
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import random
