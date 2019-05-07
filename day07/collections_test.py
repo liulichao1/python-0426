@@ -1,6 +1,6 @@
 # @Time : 2019/5/7 10:56
 # @Author : 2273360936@qq.com
-# @FileName : collection_test.py
+# @FileName : collections_test.py
 # @GitHub : https://github.com/liulichao1/python-0426
 from collections import namedtuple, deque, defaultdict, OrderedDict, Counter
 
