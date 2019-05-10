@@ -17,11 +17,12 @@ all_movies = []
 movies_list = selector.xpath("//ol[@class='grid_view']/li")
 
 for movie_selector in movies_list:
-    name = movie_selector.xpath(".//div[@class='hd']/a/span[1]/text()")[0]
-    star = movie_selector.xpath(".//div[@class='star']/span[@class='rating_num']/text()")[0]
-    nums = movie_selector.xpath(".//div[@class='star']/span[last()]/text()")[0]
+    name = movie_selector.xpath(".//div[@class='hd']/a/span[1]/text()")[0]#  名称
+    director = movie_selector.xpath(".//")
+    star = movie_selector.xpath(".//div[@class='star']/span[@class='rating_num']/text()")[0]#  评分
+    nums = movie_selector.xpath(".//div[@class='star']/span[last()]/text()")[0]#  人数
     nums = nums.split("人评价")[0]
-    url = movie_selector.xpath(".//div[@class='hd']/a/@href")[0]
+    url = movie_selector.xpath(".//div[@class='hd']/a/@href")[0]#   地址
     one_movie = [name, star, nums, url]
 
     all_movies.append(one_movie)
