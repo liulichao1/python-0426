@@ -22,7 +22,7 @@ class User(Base):
         return ''
 
 
-engine = create_engine("mysql+ mysqlconnector://root:chao0309@ @localhost:3306/db_python")
+engine = create_engine("mysql+ mysqlconnector://root:chao0309@@localhost:3306/db_python")
 
 DBSession = sessionmaker(bind=engine)
 

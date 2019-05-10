@@ -42,13 +42,7 @@ class BigWork(Frame):
         self.getfileBtn = Button(self.mainFrame, text='Open file', width=30, height=5, command=self.readImage)
         self.getfileBtn.grid(row=1, column=2)
 
-        #
-        # def remain():
-        #     self.messagebox.showinfo('你的url找不到东西，我就当成文本处理')
-
-        # labelImage = Label(window, width=125, height=55, bg='white', image= self.yunci())
-
-        self.ciyunBtn = Button(self.master, text='用文本去  的文本或url里的内容云词', width=60, height=2, command=self.draw_wordcloud)
+        self.ciyunBtn = Button(self.master, text='用内存里的文本或url里的内容制作词云', width=60, height=2, command=self.draw_wordcloud)
         self.ciyunBtn.grid(row=2, sticky=W)
         self.yinxieBtn = Button(self.master, text='用文本区的东西隐写入找到的图片', width=60, heigh=2, command=self.yinxieMethod)
         self.yinxieBtn.grid(row=2, sticky=E)
@@ -109,7 +103,7 @@ class BigWork(Frame):
                 print(txtHtml)
                 return txtHtml
             else:
-                print('你的url找不到东西，我就当成文本处理哦')
+                print('你的url找不到东西，我就当成文本处理')
                 return self.url_or_txt
         else:
             return self.url_or_txt
@@ -140,7 +134,7 @@ class BigWork(Frame):
             # 允许最大词汇
             max_words=2000,
             # 最大号字体
-            max_font_size=30
+            max_font_size=40
         )
         word_cloud = cloud.generate(cut_text)  # 产生词云
         word_cloud.to_file("image/pjl_cloud4.jpg")  # 保存图片
@@ -153,7 +147,7 @@ class BigWork(Frame):
 
     def yinxieMethod(self):
         if self.checkTxt() == '':
-            txt_for_yinxie = '你好世界，Hello world!'
+            txt_for_yinxie = 'Hello, world!'
             print('txt for yinxie is ' + txt_for_yinxie)
         else:
             txt_for_yinxie = self.checkTxt()
