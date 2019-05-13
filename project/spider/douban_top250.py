@@ -30,7 +30,8 @@ def parse(url):
         star = movie_selector.xpath(".//div[@class='star']/span[@class='rating_num']/text()")[0]  # 评分
         nums = movie_selector.xpath(".//div[@class='star']/span[last()]/text()")[0]  # 人数
         #  nums = nums.split("人评价")[0]
-        nums = re.sub("\D", "", nums)
+        #  nums = re.sub("\D", "", nums)
+        nums = re.findall("\d+", nums)[0]
         url = movie_selector.xpath(".//div[@class='hd']/a/@href")[0]  # 地址
         one_movie = [name, director, act[0], star, nums, url]
 
@@ -38,14 +39,14 @@ def parse(url):
     print(all_movies)
 
     for movie in all_movies:
-        one_str = movie[0] + ',' + movie[1] + ',' + movie[2] + ',' + movie[3] + ',' + movie[4] +','+movie[5]+ "\n"
+        one_str = movie[0] + ',' + movie[1] + ',' + movie[2] + ',' + movie[3] + ',' + movie[4] + ',' + movie[5] + "\n"
         with open("movies.txt", "a", encoding="utf-8")as f:
             f.write(one_str)
 
     next_url = selector.xpath("//span[@class='next']/a/@href")
     if next_url:
         next_url = "https://movie.douban.com/top250" + next_url[0]
-        parse(next_url)
+        parse(next_url)  # 递归调用
 
 
 if __name__ == "__main__":

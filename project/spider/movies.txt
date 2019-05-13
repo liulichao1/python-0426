@@ -94,7 +94,7 @@ V字仇杀队,詹姆斯·麦克特格,娜塔莉·波特曼,8.9,602681,https://mo
 断背山,李安,希斯·莱杰,8.7,428289,https://movie.douban.com/subject/1418834/
 狩猎,托马斯·温特伯格,麦斯·米科尔森,9.1,187153,https://movie.douban.com/subject/6985810/
 重庆森林,王家卫,林青霞,8.7,446907,https://movie.douban.com/subject/1291999/
-摩登时代,查理·卓别林,查理·卓别林,9.2,137521,https://movie.douban.com/subject/1294371/
+摩登时代,查理·卓别林,查理·卓别林,9.2,137552,https://movie.douban.com/subject/1294371/
 玛丽和马克思,亚当·艾略特,托妮·科莱特,8.9,280700,https://movie.douban.com/subject/3072124/
 喜剧之王,周星驰,周星驰,8.7,479195,https://movie.douban.com/subject/1302425/
 告白,中岛哲也,松隆子,8.7,448230,https://movie.douban.com/subject/4268598/
