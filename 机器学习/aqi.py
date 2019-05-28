@@ -57,6 +57,7 @@ train_data, validation_data, test_data = read_data.read_aqi()
 
 theta = np.zeros((6, 1))
 learning_rate = 0.00003
+
 # gradient_descending(theta, x, y, learning_rate)
 theta = gradient_descending(theta, train_data[0], train_data[1], validation_data[0], validation_data[1], learning_rate)
 aqi_value = get_aqi_value([41, 66, 9, 38, 1.11, 112])
