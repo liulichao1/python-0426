@@ -2,7 +2,6 @@ import numpy as np
 from 逻辑回归 import data_reader
 from 逻辑回归 import show
 
-
 def sigmoid(x):
     return 1.0 / (1 + np.exp(-x))
 
