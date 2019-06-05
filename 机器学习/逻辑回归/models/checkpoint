@@ -1,0 +1,6 @@
+model_checkpoint_path: "mnist.ckpt-550"
+all_model_checkpoint_paths: "mnist.ckpt-330"
+all_model_checkpoint_paths: "mnist.ckpt-385"
+all_model_checkpoint_paths: "mnist.ckpt-440"
+all_model_checkpoint_paths: "mnist.ckpt-495"
+all_model_checkpoint_paths: "mnist.ckpt-550"

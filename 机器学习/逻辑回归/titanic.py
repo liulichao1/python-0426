@@ -1,6 +1,6 @@
 from 逻辑回归 import data_reader
 import numpy as np
-from  show import show_cost
+from show import show_cost
 
 
 def sigmoid(x):
@@ -40,5 +40,5 @@ def batch_gradient_descending(theta, x, y, learning_rate, batch_size, ephocs):
 x, y = data_reader.read()
 theta = np.random.rand(x.shape[1], 1)
 learning_rate = 0.1
-batch_size=100
+batch_size = 100
 batch_gradient_descending(theta, x, y, learning_rate, batch_size, 20)
